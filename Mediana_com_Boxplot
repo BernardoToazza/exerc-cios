@@ -22,3 +22,9 @@ else:
     mediana = lista1[(quest - 1) // 2]
 print(f'A mediana é {mediana}')
 
+#Criando um DataFrame a partir de uma lista
+data = pd.DataFrame(lista1)
+
+#Plotando o Boxplot
+sns.boxplot(data = data)
+
