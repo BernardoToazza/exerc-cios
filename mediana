@@ -1,0 +1,24 @@
+#Cálculo da Mediana
+
+#Coletando o conjunto de dados
+quest = int(input("Quantas observações existem em seu conjunto de dados?"))
+lista = []
+
+for n in range(quest):
+    num = int(input('Digite um número'))
+    lista.append(num)
+
+#Ordenando o conjunto de dados
+lista1 = sorted(lista)
+print(lista1)
+
+#Cálculo da mediana
+
+if quest % 2 == 0:
+    mediana1 = lista1[quest//2]
+    mediana2 = lista1[(quest // 2) - 1]
+    mediana = (mediana1 + mediana2) / 2
+else:
+    mediana = lista1[(quest - 1) // 2]
+print(f'A mediana é {mediana}')
+
